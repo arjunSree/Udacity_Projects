@@ -1,0 +1,82 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Salamander_01.jpg  label:                 salamander
+ 2 key:     German_Shepherd_Dog_01.jpg  label:        german shepherd dog
+ 3 key:            Playstation5_01.jpg  label:                           
+ 4 key:     German_Shepherd_Dog_02.jpg  label:        german shepherd dog
+
+     MATCH:
+
+             Salamander_01.jpg: 
+Real:                 salamander   Classifier: european fire salamander, salamandra salamandra
+
+    German_Shepherd_Dog_01.jpg: 
+Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+           Playstation5_01.jpg: 
+Real:                              Classifier: loudspeaker, speaker, speaker unit, loudspeaker system, speaker system
+
+    German_Shepherd_Dog_02.jpg: 
+Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+             Salamander_01.jpg: 
+Real:                 salamander   Classifier: european fire salamander, salamandra salamandra  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    German_Shepherd_Dog_01.jpg: 
+Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+           Playstation5_01.jpg: 
+Real:                              Classifier: loudspeaker, speaker, speaker unit, loudspeaker system, speaker system  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    German_Shepherd_Dog_02.jpg: 
+Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Model Used: vgg
+
+Number of Images Used: 4
+Number of Dog Images: 2
+Number of Not-a Dog images: 2
+
+Percentage of correct match: 100.00
+
+Percentage of correct dogs: 100.00
+
+Percentage of correct notdogs: 100.00
+
+Percentage of correct breed: 100.00
+
+Checking Incorrect Labels-as-Dogs in the Dataset...
+
+No Incorrect Labels-as-Dogs Identified in this Dataset.
+
+Checking Incorrect Dog Breeds Identified in the Dataset...
+
+No Incorrect Dog Breeds Identified in this Dataset.
+
+** Total Elapsed Runtime: 0:0:6
